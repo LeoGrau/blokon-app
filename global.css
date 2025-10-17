@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*  */
+@import 'primeicons/primeicons.css';
+
+:root[class='dark'] {
+  --body-bg: var(--color-zinc-900);
+  --body-text-color: var(--p-surface-50);
+  --card-border: 1px solid transparent;
+  --card-bg: var(--p-surface-900);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-color: var(--p-surface-0);
+  --overlay-background: var(--p-surface-900);
+}
+
+html {
+  background-color: var(--body-bg);
+  height: 100%;
+}
